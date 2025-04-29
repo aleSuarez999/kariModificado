@@ -1,0 +1,91 @@
+
+.alta-producto {
+  background-color: $background-color-alta;
+  color: $text-color-alta;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-content {
+  padding: 2rem;
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    color: $text-color-alta;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 1);
+    margin-bottom: 2rem;
+    text-shadow: 4px 5px 1.5px rgba($background-color-alta, 0.6);
+  }
+}
+
+.form-product {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: $card-bg-alta;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    label {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: $secondary-color-alta;
+    }
+
+    input,
+    textarea {
+      padding: 0.7rem;
+      border: 1px solid $accent-color-alta;
+      border-radius: 0.5rem;
+      resize: vertical;
+      background-color: $background-color-alta;
+      color: $text-color-alta;
+      transition: all 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 0 15px rgb(251, 6, 255);
+      }
+
+      &:focus {
+        outline: none;
+        border-color: $secondary-color-alta;
+        box-shadow: 0 0 8px rgb(233, 233, 24);
+      }
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.form-product__submit {
+  padding: 0.8rem;
+  margin: 1rem auto;
+  background-color: $primary-color-alta; //cambiar
+  color: $text-color-alta; //cambiar
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.4s ease;
+
+  &:hover {
+    background-color: darken($primary-color-alta, 10%);
+    box-shadow: 0 0 12px 4px lighten($accent-color-alta, 20%);
+  }
+}

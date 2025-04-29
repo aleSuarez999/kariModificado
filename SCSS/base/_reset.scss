@@ -1,0 +1,41 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    // font-family: ;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+h3 {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.card__title h2, .card__price p {
+    margin: 0;
+    padding: 0;
+}
+
+//nuevo
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    // color: ;
+}
+
+// nuevo ale
+.container{
+    margin: auto;
+
+    @include create-container-width();
+}

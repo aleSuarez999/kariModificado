@@ -1,0 +1,100 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(45deg, red, white);
+    padding: 5px 0;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        background: linear-gradient(45deg, #f39c12, #1c2e81);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2)
+    }
+
+    .header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px; //resolucion de escritorio 1140
+        margin: 0 auto; // margen homogeneo iz-der auto para mantener orden responsive
+        padding: auto;
+    }
+
+    .header__logo {
+        width: 8rem;
+        height: auto;
+    }
+
+    .main__title {
+        display: flex;
+        font-size: 1.5rem;
+        margin: 0;
+        // @media (max-width:(map-get($grid-breakpoints, md))){
+            @media (max-width:768px){
+
+            // font-size: 1rem;
+            display: none;
+        }
+    } // cambie esto
+
+    .header__nav {
+        display: flex;
+        align-items: center;
+        @media (max-width:(map-get($grid-breakpoints, sm))){
+            // @media (max-width:768px){
+
+                // font-size: 1rem;
+                display: none;
+            }
+    }
+
+    .nav__list {
+        display: flex;
+        gap: 1rem;
+        margin-right: 1rem;
+    }
+
+    .nav__item {
+        list-style: none;
+    }
+
+    .nav__link {
+        color: white; //cambiar
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #f39c12;
+        }
+    }
+
+    .header__search-form {
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 20px;
+
+        .header__search-input {
+            padding: 2px;
+            border-radius: 5px;
+        }
+
+        .header__search-button {
+            padding: auto;
+            margin: auto;
+            background-color: yellow; //cambiar
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+            &:hover {
+                background-color: red; //cambiar
+            }
+        }
+    }
+}

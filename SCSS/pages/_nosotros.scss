@@ -1,0 +1,41 @@
+
+.nosotros-page {
+    background-color: #e854e8; //cambiar
+    color: #fffeee;//cambiar
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; //cambiar
+    margin: 0;
+    padding: 0;
+}
+
+.about-section {
+    max-width: 60%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: rgb(177, 244, 222); //cambiar
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    transform: scale3d(1, 1, 1);
+    transition: all 0.5s ease;
+    text-align: center;
+
+    &:hover {
+        transform: scale3d(1.05, 1.05, 1);
+    }
+
+    h2 {
+        color: aqua;//cambiar
+        margin-bottom: 1rem;
+        text-shadow: 0 0 4px $color-primary-ft;//ambiar
+    }
+
+    p, ul {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+}
+

@@ -1,0 +1,44 @@
+
+.title {
+    text-align: center;
+}
+
+.contact {
+    padding: 2rem;
+    margin-top: 0;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        margin: auto;
+
+        label {
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        input, textarea {
+            padding: 0.5rem;
+            border: 1px solid red;//cambiar color
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: pink;//cambiar color
+            color: #fffeee; //cambiar
+            border: none;
+            margin: 1rem auto;
+            padding: 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background: darken(red, 10%);//cambiar
+            }
+        }
+
+        #form-messages {
+            margin-top: 1rem;
+        }
+    }
+}

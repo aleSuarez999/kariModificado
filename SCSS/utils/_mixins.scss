@@ -1,0 +1,51 @@
+
+// @mixin create-container-width ($selector) {
+//     @each $bp, $w in $grid-breakpoints {
+//         @media (min-width: $w) {
+//             #{$selector} {
+//                 max-width: map-get($grid-width, $bp);
+//                 margin: auto;
+//             }
+//         }
+//     }
+// }
+
+// ?
+
+@mixin create-header-size($selector){
+    @each $bp, $w in $grid-breakpoints {
+        @media (min-width: $w) {
+            #{$selector} {
+                font-size: map-get($font-w, $bp);
+            }
+        }
+    }
+}
+
+// alta producto
+
+
+//footer
+
+@mixin media-query($size) {
+    @if $size == mobile {
+        @media screen and (max-width: 768px) {@content;}
+    }
+    @else if $size == tablet {
+        @media screen and (max-width: 1024px) {@content;}
+    }
+    @else if $size == desktop {
+        @media screen and (min-width: 1025px) {@content;}
+    }
+}
+
+// nuevo ale
+@mixin create-container-width () {
+    @each $bp, $w in $grid-breakpoints {
+        @media (min-width: $w) {
+            max-width: map-get($grid-width, $bp);
+
+            // para cualquier div en base a breakpoints
+        }
+    }
+}

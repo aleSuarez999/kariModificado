@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="SCSS/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html">
+                <img src="/assets/images/Proyecto-logo.png" alt="Logo Jugueteria Cosmica" class="header__logo">
+            </a>
+            <h1 class="main__title">Bienvenidos a Jugueteria Cosmica</h1>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="alta.html" class="nav__link">Alta</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="active">Contacto</a></li> <!-- cambios -->
+                    <li class="nav__item"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                </ul>
+                <form class="header__search-form">
+                    <input type="text" class="header__search-input" placeholder="Buscar juguetes...">
+                    <button type="submit" class="header__search-button">🔍</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h1 class="title">Contacto</h1>
+            <form id="contact-form" novalidate> <!-- ver -->
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required placeholder="Nombre completo">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                
+                <label for="comments">Comentarios:</label>
+                <textarea id="comments" name="comments" rows="4" required placeholder="Dejanos tu mensaje..."></textarea>
+                
+                <button type="submit">Enviar</button>
+                <p id="form-messages"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Redes sociales</h3>
+                <ul class="footer-list">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Novedades</h3>
+                <form class="footer-form" action="#">
+                    <input class="email" type="email" placeholder="Ingresa tu correo" required>
+                    <button class="button" type="submit">Suscribite</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h3>Paginas y Avisos Legales</h3>
+                <ul>
+                    <li><a href="#">Condiciones de compra</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Mapa del sitio</a></li>
+                </ul>
+            </div>  
+            <div class="footer-section">
+                <h3>Informacion de contacto</h3>
+                <ul>
+                    <li><a href="#">Descripcion de la tienda</a></li>
+                    <li><a href="#">Localizacion</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-p">&copy; 2025 Juguetería Cósmica. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="assets/JS/main.js"></script>
+</body>
+</html>
